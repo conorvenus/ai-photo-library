@@ -11,6 +11,6 @@ import PhotoGrid from '../components/PhotoGrid.vue'
                 27 Photos
             </p>
         </header>
+        <PhotoGrid />
     </div>
-    <PhotoGrid />
 </template>

@@ -5,5 +5,5 @@
 </script>
 
 <template>
-    <img class="rounded-xl shadow-md m-4 w-60 transition-[0.8] hover:transform-gpu hover:scale-[1.1]" :src="photoURL" alt="photo"/>
+    <img class="rounded-xl shadow-md cursor-pointer w-60 transition-[0.8] hover:transform-gpu hover:scale-[1.1]" :src="photoURL" alt="photo"/>
 </template>
