@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined } from 'oh-vue-icons/icons'
+import { HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined, HiSolidSearch   } from 'oh-vue-icons/icons'
 import App from './App.vue'
 import './index.css'
 
-addIcons(HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined)
+addIcons(HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined, HiSolidSearch  )
 
 import PhotosView from './views/PhotosView.vue'
 
