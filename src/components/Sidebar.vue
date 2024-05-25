@@ -1,8 +1,9 @@
 <script setup>
 import SidebarSection from './SidebarSection.vue';
+import ProfileSummary from './ProfileSummary.vue';
 </script>
 <template>
-    <nav class="flex flex-col gap-16 flex-[0.3]">
+    <nav class="flex flex-col gap-16 flex-[0.3] h-full justify-between">
       <SidebarSection title="Library" :links="[{
         title: 'Photos',
         to: '/photos',
@@ -33,5 +34,6 @@ import SidebarSection from './SidebarSection.vue';
         to: '/add-new',
         icon: 'md-addphotoalternate-outlined'
       }]" />
+      <ProfileSummary name="John Doe" photoURL="https://ui-avatars.com/api/?name=John+Doe" />
     </nav>
 </template>
