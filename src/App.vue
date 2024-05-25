@@ -4,5 +4,7 @@ import Sidebar from './components/Sidebar.vue'
 
 <template>
     <Sidebar />
-    <RouterView />
+    <main class="flex-1">
+        <RouterView />
+    </main>
 </template>

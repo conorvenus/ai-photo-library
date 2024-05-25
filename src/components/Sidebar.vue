@@ -1,10 +1,37 @@
 <script setup>
-import SidebarLink from './SidebarLink.vue'
+import SidebarSection from './SidebarSection.vue';
 </script>
 <template>
-    <nav>
-      <SidebarLink />
-      <RouterLink to="/">Go to Home</RouterLink>
-      <RouterLink to="/about">Go to About</RouterLink>
+    <nav class="flex flex-col gap-16 flex-[0.3]">
+      <SidebarSection title="Library" :links="[{
+        title: 'Photos',
+        to: '/photos',
+        icon: 'hi-photograph'
+      }, {
+        title: 'Albums',
+        to: '/albums',
+        icon: 'md-photoalbum-outlined'
+      }, {
+        title: 'Folders',
+        to: '/folders',
+        icon: 'bi-folder'
+      }]" />
+      <SidebarSection title="Collections" :links="[{
+        title: 'Memories',
+        to: '/memories',
+        icon: 'bi-bookmark-heart'
+      }, {
+        title: 'Location',
+        to: '/location',
+        icon: 'co-location-pin'
+      }, {
+        title: 'People',
+        to: '/people',
+        icon: 'bi-people'
+      }, {
+        title: 'Add New',
+        to: '/add-new',
+        icon: 'md-addphotoalternate-outlined'
+      }]" />
     </nav>
 </template>

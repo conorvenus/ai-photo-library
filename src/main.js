@@ -1,18 +1,17 @@
 import { createApp } from 'vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { HiPhotograph } from 'oh-vue-icons/icons'
+import { HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined } from 'oh-vue-icons/icons'
 import App from './App.vue'
 import './index.css'
 
-addIcons(HiPhotograph)
+addIcons(HiPhotograph, MdPhotoalbumOutlined, BiFolder, BiBookmarkHeart, CoLocationPin, BiPeople, MdAddphotoalternateOutlined)
 
-import HomeView from './views/HomeView.vue'
-import AboutView from './views/AboutView.vue'
+import PhotosView from './views/PhotosView.vue'
 
 const routes = [
-    { path: '/', component: HomeView },
-    { path: '/about', component: AboutView }
+    { path: '/', redirect: '/photos' },
+    { path: '/photos', component: PhotosView },
 ]
 
 const router = createRouter({
